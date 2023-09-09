@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Emoji Encryption/Decryption</title>
+    <link rel="stylesheet" href="TexttoEmoji.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>
+        Text <span><img src="icons8-arrow-16.png" alt="" /></span> Emoji
+      </h1>
+      <div id="endec-div">
+        <h3 id="enc-btn">
+          <span><img src="icons8-lock-32.png" alt="" /></span>Encrypt Text
+        </h3>
+        <h3 id="dec-btn">
+          <span><img src="icons8-padlock-32.png" alt="" /></span>Decrypt Text
+        </h3>
+      </div>
+
+      <div id="encryption">
+        <h5>1. Type a message</h5>
+        <textarea
+          placeholder="Han yahi par likhna ha"
+          name=""
+          id="textmsg"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <h5>2. Set a Password</h5>
+        <input type="password" name="" id="password" />
+        <button id="encrypt-btn">
+          <span><img src="icons8-lock-32.png" alt="" /></span>Encrypt Text
+        </button>
+      </div>
+
+      <div id="decryption">
+        <h5>1. Paste encrypted emojis</h5>
+        <textarea
+          placeholder="Han yahi par likhna ha"
+          name=""
+          id="emojimsg"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <h5>2. Type a Password</h5>
+        <input type="password" name="" id="finalpassword" />
+        <button id="decrypt-btn">
+          <span><img src="icons8-padlock-32.png" alt="" /></span>Decrypt emoji
+        </button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <!-- <script src="TexttoEmoji.js"></script> -->
+    <script src="TexttoEmoj.js"></script>
+  </body>
+</html>
